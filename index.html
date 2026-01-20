@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Victor W. Petersen — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Victor Wejergang Petersen — RL simulation, Rust + Python, and thoughtful product engineering."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="texture" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="brand">
+        <div class="monogram" aria-hidden="true">VWP</div>
+        <div>
+          <p class="eyebrow">Victor Wejergang Petersen</p>
+          <p class="tagline">RL simulation, Rust + Python, and product-minded engineering.</p>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Denmark · Systems-first · Quietly experimental</p>
+          <h1>
+            I build deterministic sims and tools that feel sturdy under pressure.
+          </h1>
+          <p class="lead">
+            My work lives at the intersection of rigorous engineering and play: card
+            games, Pokémon battles, and reinforcement learning pipelines built to
+            scale without losing clarity.
+          </p>
+          <div class="cta">
+            <a class="button" href="#work">See the work</a>
+            <a class="button ghost" href="#contact">Start a project</a>
+          </div>
+          <div class="quick-facts">
+            <span>Rust hot loops</span>
+            <span>Python bindings</span>
+            <span>Deterministic RL envs</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" data-reveal>
+          <div class="stamp">Featured</div>
+          <h2>Weiss Schwarz Simulator</h2>
+          <p>
+            RL-first simulator with a Rust core that advances until decision points,
+            plus a Python EnvPool for batched training.
+          </p>
+          <ul>
+            <li>Fixed action space + legality masking</li>
+            <li>Versioned observations for reproducibility</li>
+            <li>Multicore stepping with GIL release</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/victorwp288/weiss-schwarz-simulator">GitHub</a>
+            <a href="https://victorwp288.github.io/weiss-schwarz-simulator/">Docs</a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-header" data-reveal>
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects with sharp edges and clear intention.</h2>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card" data-reveal>
+            <div class="work-meta">
+              <span>Rust · Python</span>
+              <span>RL tooling</span>
+            </div>
+            <h3>Weiss Schwarz Simulator</h3>
+            <p>
+              A deterministic engine built for reinforcement learning: stable action
+              encodings and fast batch stepping.
+            </p>
+            <div class="work-links">
+              <a href="https://github.com/victorwp288/weiss-schwarz-simulator">Repo</a>
+              <a href="https://victorwp288.github.io/weiss-schwarz-simulator/benchmarks">Benchmarks</a>
+            </div>
+          </article>
+
+          <article class="work-card" data-reveal>
+            <div class="work-meta">
+              <span>Python · RL</span>
+              <span>Pokémon Showdown</span>
+            </div>
+            <h3>RL Agent for Pokémon Showdown</h3>
+            <p>
+              PPO-based agent for Gen 9 Doubles using Stable-Baselines3 and poke-env,
+              with offline imitation training and online evaluation flows.
+            </p>
+            <div class="work-links">
+              <a href="https://github.com/victorwp288/poke_rl_doubles">Repo</a>
+            </div>
+          </article>
+
+          <article class="work-card" data-reveal>
+            <div class="work-meta">
+              <span>Exploration</span>
+              <span>Systems + UX</span>
+            </div>
+            <h3>More experiments</h3>
+            <p>
+              Smaller builds ranging from disk tooling to TypeScript utilities —
+              always chasing clarity, speed, and just enough delight.
+            </p>
+            <div class="work-links">
+              <a href="https://github.com/victorwp288?tab=repositories">All repos</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="section-header" data-reveal>
+          <p class="eyebrow">Process</p>
+          <h2>How I keep complex work readable.</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card" data-reveal>
+            <span class="process-number">01</span>
+            <h3>Model the rules</h3>
+            <p>
+              Build state machines that reveal intent early — deterministic,
+              testable, and built for replay.
+            </p>
+          </div>
+          <div class="process-card" data-reveal>
+            <span class="process-number">02</span>
+            <h3>Expose clean surfaces</h3>
+            <p>
+              Action spaces, observation encodings, and APIs that stay stable while
+              internals evolve.
+            </p>
+          </div>
+          <div class="process-card" data-reveal>
+            <span class="process-number">03</span>
+            <h3>Ship with documentation</h3>
+            <p>
+              Benchmarks, changelogs, and docs make the work feel solid for the next
+              person.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-header" data-reveal>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something with a sharp point of view.</h2>
+        </div>
+
+        <div class="contact-grid" data-reveal>
+          <div class="contact-card">
+            <h3>Collaboration</h3>
+            <p>
+              I’m open to projects in simulation, tooling, or product engineering.
+              If you want a collaborator who documents the sharp edges, I’m in.
+            </p>
+          </div>
+          <div class="contact-card">
+            <h3>Find me</h3>
+            <ul>
+              <li><a href="https://github.com/victorwp288">GitHub / victorwp288</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Victor Wejergang Petersen. Built with intent.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
