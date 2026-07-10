@@ -9,7 +9,10 @@
       content="Public résumé for Victor Wejergang Petersen, software engineer working across applied AI, full-stack development, and dependable data systems."
     />
     <meta name="theme-color" content="#0b1f1c" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
     <link rel="canonical" href="https://victorwp.com/cv.html" />
+    <link rel="alternate" type="text/plain" href="resume.txt" title="Plain-text résumé" />
+    <link rel="alternate" type="application/json" href="resume.json" title="JSON Résumé" />
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://victorwp.com/cv.html" />
     <meta property="og:title" content="Résumé — Victor W. Petersen" />
@@ -37,6 +40,27 @@
     />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "name": "Résumé — Victor Wejergang Petersen",
+        "url": "https://victorwp.com/cv.html",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Victor Wejergang Petersen",
+          "url": "https://victorwp.com",
+          "email": "mailto:victorwp@protonmail.com",
+          "jobTitle": "Software Engineer",
+          "knowsLanguage": ["Danish", "English"],
+          "award": "MSc thesis graded 12/A",
+          "sameAs": [
+            "https://github.com/victorwp288",
+            "https://www.linkedin.com/in/vwp/"
+          ]
+        }
+      }
+    </script>
   </head>
   <body class="cv-body">
     <a class="skip-link" href="#cv-content">Skip to résumé</a>
@@ -82,8 +106,8 @@
           </div>
           <address class="cv-contact">
             <a href="mailto:victorwp@protonmail.com">victorwp@protonmail.com</a>
-            <a href="https://www.linkedin.com/in/vwp/">linkedin.com/in/vwp</a>
-            <a href="https://github.com/victorwp288">github.com/victorwp288</a>
+            <a href="https://www.linkedin.com/in/vwp/" rel="me">linkedin.com/in/vwp</a>
+            <a href="https://github.com/victorwp288" rel="me">github.com/victorwp288</a>
             <a href="https://victorwp.com">victorwp.com</a>
             <span>Denmark</span>
           </address>
@@ -265,7 +289,9 @@
 
         <footer class="cv-sheet__footer">
           <span>Public version · Phone and address intentionally omitted</span>
-          <span>victorwp.com</span>
+          <span>
+            victorwp.com · <a href="resume.txt">Plain text</a> · <a href="resume.json">JSON</a>
+          </span>
         </footer>
       </article>
     </main>

@@ -614,31 +614,39 @@ p {
   font-weight: 500;
 }
 
-.system-orbit__label {
-  position: absolute;
-  padding: 4px 7px;
-  border: 1px solid rgba(243, 240, 231, 0.15);
-  background: var(--ink-raised);
-  color: rgba(243, 240, 231, 0.72);
+.system-orbit__stages {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: -4px 12px 18px;
+  border-top: 1px solid rgba(243, 240, 231, 0.16);
+  border-bottom: 1px solid rgba(243, 240, 231, 0.16);
+  background: rgba(11, 31, 28, 0.72);
+}
+
+.system-orbit__stages span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 9px 5px;
+  border-right: 1px solid rgba(243, 240, 231, 0.12);
+  color: rgba(243, 240, 231, 0.74);
   font-family: var(--mono);
-  font-size: 0.54rem;
-  letter-spacing: 0.06em;
+  font-size: 0.51rem;
+  letter-spacing: 0.055em;
   text-transform: uppercase;
 }
 
-.system-orbit__label--one {
-  top: 28%;
-  left: 9%;
+.system-orbit__stages span:last-child {
+  border-right: 0;
 }
 
-.system-orbit__label--two {
-  top: 46%;
-  left: 43%;
-}
-
-.system-orbit__label--three {
-  right: 8%;
-  bottom: 24%;
+.system-orbit__stages b {
+  color: var(--signal);
+  font-size: 0.48rem;
+  font-weight: 500;
 }
 
 .system-card__legend {
@@ -1935,6 +1943,15 @@ a.work-row:hover .work-row__arrow {
   text-transform: uppercase;
 }
 
+.cv-sheet__footer a {
+  border-bottom: 1px solid currentColor;
+  text-decoration: none;
+}
+
+.cv-sheet__footer a:hover {
+  color: #a53b22;
+}
+
 .site-footer--cv {
   color: rgba(243, 240, 231, 0.54);
 }
@@ -2294,7 +2311,13 @@ a.work-row:hover .work-row__arrow {
     padding-inline: 0;
   }
 
-  .system-orbit__label {
+  .system-orbit__stages {
+    margin: 0 8px 15px;
+  }
+
+  .system-orbit__stages span {
+    gap: 4px;
+    padding: 8px 2px;
     font-size: 0.45rem;
   }
 

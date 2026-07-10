@@ -1,0 +1,110 @@
+VICTOR WEJERGANG PETERSEN
+Software Engineer — Applied AI and Full-Stack Systems
+Denmark
+
+Email: victorwp@protonmail.com
+Portfolio: https://victorwp.com
+LinkedIn: https://www.linkedin.com/in/vwp/
+GitHub: https://github.com/victorwp288
+
+PROFILE
+
+Software engineer with an MSc in Computer Science, focused on applied AI,
+reliable data systems, and end-to-end product delivery. My thesis, graded
+12/A, combined reinforcement learning with deterministic simulation,
+reproducible experiments, and evaluation tooling. I bring practical
+experience delivering user-facing systems with Python, TypeScript, React,
+SQL, and cloud backends.
+
+CORE SKILLS
+
+Applied AI and evaluation:
+Python, PyTorch, Stable-Baselines3, reinforcement learning, model training,
+experiment design, reproducible evaluation, replay, and debugging.
+
+Full-stack product delivery:
+TypeScript, JavaScript, React, Next.js, React Native, Node.js, REST APIs,
+authentication, data modeling, deployment, and handover.
+
+Data and platforms:
+SQL, PostgreSQL, PostGIS, Supabase, Firebase, DynamoDB, and AWS Lambda.
+
+Engineering quality:
+Git, GitHub Actions, Docker, testing, validation, logging, stable interfaces,
+security-aware development, and project-level Rust.
+
+EXPERIENCE
+
+Freelance Full-Stack Developer — Gioia Beauty
+2024 | Client project, Piacenza, Italy
+- Delivered a production booking system from requirements and data model
+  through deployment and handover.
+- Built the Firebase backend and operational admin workflow with
+  authentication, validation, and logging.
+
+Software Developer Intern — Klimakampen
+August 2023 to October 2023 | Copenhagen, Denmark
+- Contributed to a production React Native application with focus on backend
+  functionality and data flows.
+- Built AWS Lambda functions with DynamoDB, validation, and predictable error
+  handling.
+
+Software Developer Intern — Auditdata
+2022 | Copenhagen, Denmark
+- Developed a calibration-data system with IOTA-based tamper-evident storage
+  and a React interface.
+- Designed ingestion and retrieval flows with careful handling of edge cases.
+
+EDUCATION
+
+MSc in Computer Science — Roskilde University
+August 2024 to June 2026
+- MSc thesis: 12/A
+- Deep Learning: 12/A
+- IT Security: 12/A
+
+Bachelor of Web Development — KEA
+August 2022 to January 2024
+- Included an exchange semester at Fontys University of Applied Sciences in
+  Eindhoven, Netherlands.
+
+AP Graduate in Computer Science — KEA
+Completed January 2022
+- Software construction, software design, IT in organisations, and computer
+  architecture.
+
+SELECTED PROJECTS
+
+MSc thesis — Reinforcement Learning Agent for Weiss Schwarz
+https://github.com/victorwp288/weiss_schwarz_rl
+- Reproducible training and evaluation pipeline against a custom deterministic
+  environment, with controlled comparisons, replay, debugging, and experiment
+  tooling.
+
+Weiss Schwarz Simulator
+https://github.com/victorwp288/weiss-schwarz-simulator
+- Open-source batched simulator with a Rust engine, fixed action space,
+  legality masks, stable observation and action contracts, Python bindings,
+  replay support, CI, documentation, and performance baselines.
+
+DDS Secure Chat
+https://github.com/victorwp288/DDS_Secure_chat_web
+- End-to-end encrypted chat prototype with authentication, real-time
+  messaging, key and device flows, and documented security assumptions.
+
+Pokémon Showdown RL Agent
+https://github.com/victorwp288/poke_rl_doubles
+- PPO-based Gen 9 Doubles agent with structured experiments, training tools,
+  and evaluation scripts.
+
+FuelScout Italia
+- Map-first React Native MVP using official Italian fuel-price data,
+  Supabase/PostGIS nearby search, price history, and scheduled ingestion.
+
+ADDITIONAL
+
+PADI Divemaster
+Languages: Danish (native), English (fluent)
+Exchange semester in Eindhoven, Netherlands
+
+This public résumé intentionally omits phone number and street address.

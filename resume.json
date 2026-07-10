@@ -1,0 +1,205 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Victor Wejergang Petersen",
+    "label": "Software Engineer — Applied AI and Full-Stack Systems",
+    "email": "victorwp@protonmail.com",
+    "url": "https://victorwp.com",
+    "summary": "Software engineer with an MSc in Computer Science, focused on applied AI, reliable data systems, and end-to-end product delivery. My thesis, graded 12/A, combined reinforcement learning with deterministic simulation, reproducible experiments, and evaluation tooling.",
+    "location": {
+      "countryCode": "DK",
+      "country": "Denmark"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "vwp",
+        "url": "https://www.linkedin.com/in/vwp/"
+      },
+      {
+        "network": "GitHub",
+        "username": "victorwp288",
+        "url": "https://github.com/victorwp288"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Gioia Beauty",
+      "position": "Freelance Full-Stack Developer",
+      "url": "https://www.gioiabeauty.net",
+      "startDate": "2024",
+      "summary": "Client project for an Italian beauty salon.",
+      "highlights": [
+        "Delivered a production booking system from requirements and data model through deployment and handover.",
+        "Built the Firebase backend and operational admin workflow with authentication, validation, and logging."
+      ]
+    },
+    {
+      "name": "Klimakampen",
+      "position": "Software Developer Intern",
+      "startDate": "2023-08",
+      "endDate": "2023-10",
+      "highlights": [
+        "Contributed to a production React Native application with focus on backend functionality and data flows.",
+        "Built AWS Lambda functions with DynamoDB, validation, and predictable error handling."
+      ]
+    },
+    {
+      "name": "Auditdata",
+      "position": "Software Developer Intern",
+      "startDate": "2022",
+      "highlights": [
+        "Developed a calibration-data system with IOTA-based tamper-evident storage and a React interface.",
+        "Designed ingestion and retrieval flows with careful handling of edge cases."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Roskilde University",
+      "area": "Computer Science",
+      "studyType": "MSc",
+      "startDate": "2024-08",
+      "endDate": "2026-06",
+      "courses": [
+        "MSc thesis — 12/A",
+        "Deep Learning — 12/A",
+        "IT Security — 12/A"
+      ]
+    },
+    {
+      "institution": "Copenhagen School of Design and Technology (KEA)",
+      "area": "Web Development",
+      "studyType": "Bachelor",
+      "startDate": "2022-08",
+      "endDate": "2024-01",
+      "courses": [
+        "Exchange semester at Fontys University of Applied Sciences, Eindhoven"
+      ]
+    },
+    {
+      "institution": "Copenhagen School of Design and Technology (KEA)",
+      "area": "Computer Science",
+      "studyType": "AP Graduate",
+      "endDate": "2022-01",
+      "courses": [
+        "Software construction",
+        "Software design",
+        "IT in organisations",
+        "Computer architecture"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "MSc thesis graded 12/A",
+      "date": "2026-06-25",
+      "awarder": "Roskilde University"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "PADI Divemaster",
+      "issuer": "PADI"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Applied AI and evaluation",
+      "keywords": [
+        "Python",
+        "PyTorch",
+        "Stable-Baselines3",
+        "reinforcement learning",
+        "experiment design",
+        "reproducible evaluation",
+        "debugging"
+      ]
+    },
+    {
+      "name": "Full-stack product delivery",
+      "keywords": [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "React Native",
+        "Node.js",
+        "REST APIs",
+        "authentication"
+      ]
+    },
+    {
+      "name": "Data and platforms",
+      "keywords": [
+        "SQL",
+        "PostgreSQL",
+        "PostGIS",
+        "Supabase",
+        "Firebase",
+        "DynamoDB",
+        "AWS Lambda"
+      ]
+    },
+    {
+      "name": "Engineering quality",
+      "keywords": [
+        "Git",
+        "GitHub Actions",
+        "Docker",
+        "testing",
+        "validation",
+        "logging",
+        "stable interfaces",
+        "project-level Rust"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Danish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "projects": [
+    {
+      "name": "MSc thesis — Reinforcement Learning Agent for Weiss Schwarz",
+      "description": "A reproducible reinforcement-learning training and evaluation pipeline against a custom deterministic environment, with controlled comparisons, replay, debugging, and experiment tooling.",
+      "url": "https://github.com/victorwp288/weiss_schwarz_rl",
+      "keywords": ["Python", "PyTorch", "Stable-Baselines3", "reinforcement learning"]
+    },
+    {
+      "name": "Weiss Schwarz Simulator",
+      "description": "Open-source batched simulator with a Rust engine, fixed action space, legality masks, stable observation and action contracts, Python bindings, replay support, CI, documentation, and performance baselines.",
+      "url": "https://github.com/victorwp288/weiss-schwarz-simulator",
+      "keywords": ["Rust", "PyO3", "Python", "deterministic simulation"]
+    },
+    {
+      "name": "DDS Secure Chat",
+      "description": "End-to-end encrypted chat prototype with authentication, real-time messaging, key and device flows, and documented security assumptions.",
+      "url": "https://github.com/victorwp288/DDS_Secure_chat_web",
+      "keywords": ["React", "Supabase", "Signal Protocol", "end-to-end encryption"]
+    },
+    {
+      "name": "Pokémon Showdown RL Agent",
+      "description": "PPO-based Gen 9 Doubles agent with structured experiments, training tools, and evaluation scripts.",
+      "url": "https://github.com/victorwp288/poke_rl_doubles",
+      "keywords": ["Python", "PyTorch", "PPO", "reinforcement learning"]
+    },
+    {
+      "name": "FuelScout Italia",
+      "description": "Map-first React Native MVP using official Italian fuel-price data, Supabase/PostGIS nearby search, price history, and scheduled ingestion.",
+      "keywords": ["React Native", "Supabase", "PostGIS", "data ingestion"]
+    }
+  ],
+  "meta": {
+    "canonical": "https://victorwp.com/resume.json",
+    "version": "1.0.0",
+    "lastModified": "2026-07-10"
+  }
+}

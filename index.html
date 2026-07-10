@@ -10,7 +10,10 @@
     />
     <meta name="author" content="Victor Wejergang Petersen" />
     <meta name="theme-color" content="#0b1f1c" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
     <link rel="canonical" href="https://victorwp.com/" />
+    <link rel="alternate" type="text/plain" href="resume.txt" title="Plain-text résumé" />
+    <link rel="alternate" type="application/json" href="resume.json" title="JSON Résumé" />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://victorwp.com/" />
@@ -49,6 +52,9 @@
         "url": "https://victorwp.com",
         "email": "mailto:victorwp@protonmail.com",
         "jobTitle": "Software Engineer",
+        "mainEntityOfPage": "https://victorwp.com/",
+        "knowsLanguage": ["Danish", "English"],
+        "award": "MSc thesis graded 12/A",
         "sameAs": [
           "https://github.com/victorwp288",
           "https://www.linkedin.com/in/vwp/"
@@ -69,6 +75,40 @@
           "Reinforcement learning",
           "Full-stack development",
           "Data systems"
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Software Engineer",
+          "skills": "Python, TypeScript, JavaScript, SQL, React, React Native, Node.js, PyTorch, PostgreSQL, Supabase, Firebase, project-level Rust"
+        },
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "MSc in Computer Science",
+            "credentialCategory": "Master's degree",
+            "recognizedBy": {
+              "@type": "CollegeOrUniversity",
+              "name": "Roskilde University"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Bachelor of Web Development",
+            "credentialCategory": "Bachelor's degree",
+            "recognizedBy": {
+              "@type": "CollegeOrUniversity",
+              "name": "Copenhagen School of Design and Technology"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "AP Graduate in Computer Science",
+            "credentialCategory": "Academy profession degree",
+            "recognizedBy": {
+              "@type": "CollegeOrUniversity",
+              "name": "Copenhagen School of Design and Technology"
+            }
+          }
         ]
       }
     </script>
@@ -157,14 +197,13 @@
                   <circle r="7" />
                   <animateMotion dur="4.8s" repeatCount="1" fill="freeze" path="M79 291C121 171 191 111 276 116C364 121 412 180 454 269" />
                 </g>
-                <text x="52" y="109">INPUT</text>
-                <text x="245" y="193">SYSTEM</text>
-                <text x="428" y="297">PROOF</text>
                 <text class="orbit-center" x="270" y="216" text-anchor="middle">SHIP</text>
               </svg>
-              <span class="system-orbit__label system-orbit__label--one">Understand</span>
-              <span class="system-orbit__label system-orbit__label--two">Build</span>
-              <span class="system-orbit__label system-orbit__label--three">Verify</span>
+              <div class="system-orbit__stages" aria-hidden="true">
+                <span><b>01</b> Understand</span>
+                <span><b>02</b> Build</span>
+                <span><b>03</b> Verify</span>
+              </div>
             </div>
 
             <div class="system-card__legend">
@@ -627,8 +666,8 @@
               <span aria-hidden="true">↗</span>
             </a>
             <div class="contact-links" aria-label="Social profiles">
-              <a href="https://www.linkedin.com/in/vwp/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-              <a href="https://github.com/victorwp288" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              <a href="https://www.linkedin.com/in/vwp/" target="_blank" rel="me noopener noreferrer">LinkedIn ↗</a>
+              <a href="https://github.com/victorwp288" target="_blank" rel="me noopener noreferrer">GitHub ↗</a>
               <a href="cv.html">Résumé →</a>
             </div>
           </div>

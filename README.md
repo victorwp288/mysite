@@ -16,6 +16,8 @@ Then open `http://localhost:8000`.
 
 - `index.html` — portfolio, selected work, experience, about, and contact.
 - `cv.html` — public résumé with a print/save-to-PDF action.
+- `resume.txt` — plain-text résumé for ATS, crawlers, and low-format readers.
+- `resume.json` — structured résumé using the JSON Résumé field model.
 
 ## Content notes
 
@@ -26,6 +28,6 @@ Then open `http://localhost:8000`.
 
 ## Updating
 
-- Keep career facts in `index.html` and `cv.html` synchronized.
+- Keep career facts in `index.html`, `cv.html`, `resume.txt`, and `resume.json` synchronized.
 - Replace `assets/og-image.png` after major hero changes.
 - Test at desktop and mobile widths, with JavaScript disabled, and with reduced motion enabled.
