@@ -190,14 +190,32 @@
                 <path class="orbit-path orbit-path--one" d="M79 291C121 171 191 111 276 116C364 121 412 180 454 269" />
                 <path class="orbit-path orbit-path--two" d="M91 122C153 244 238 310 329 298C388 291 429 260 462 207" />
                 <circle class="orbit-node orbit-node--signal" cx="91" cy="122" r="10" />
-                <circle class="orbit-node" cx="270" cy="210" r="15" />
                 <circle class="orbit-node orbit-node--warm" cx="454" cy="269" r="10" />
                 <circle class="orbit-pulse" cx="270" cy="210" r="27" />
+                <g class="orbit-hub" transform="translate(270 210)">
+                  <circle class="orbit-node orbit-node--hub" r="16" />
+                  <circle class="orbit-hub__ring" r="11.5" />
+                  <text class="orbit-center" x="0" y="0">SHIP</text>
+                </g>
+                <g class="orbit-label orbit-label--input">
+                  <path class="orbit-label__leader" d="M91 98V110" />
+                  <rect class="orbit-label__plate" x="49" y="72" width="84" height="26" rx="2" />
+                  <text class="orbit-label__text" x="91" y="85">INPUT</text>
+                </g>
+                <g class="orbit-label orbit-label--system">
+                  <path class="orbit-label__leader" d="M270 184V192" />
+                  <rect class="orbit-label__plate" x="228" y="158" width="84" height="26" rx="2" />
+                  <text class="orbit-label__text" x="270" y="171">SYSTEM</text>
+                </g>
+                <g class="orbit-label orbit-label--proof">
+                  <path class="orbit-label__leader" d="M454 279V305" />
+                  <rect class="orbit-label__plate" x="412" y="305" width="84" height="26" rx="2" />
+                  <text class="orbit-label__text" x="454" y="318">PROOF</text>
+                </g>
                 <g class="orbit-runner" filter="url(#softGlow)">
                   <circle r="7" />
                   <animateMotion dur="4.8s" repeatCount="1" fill="freeze" path="M79 291C121 171 191 111 276 116C364 121 412 180 454 269" />
                 </g>
-                <text class="orbit-center" x="270" y="216" text-anchor="middle">SHIP</text>
               </svg>
               <div class="system-orbit__stages" aria-hidden="true">
                 <span><b>01</b> Understand</span>
