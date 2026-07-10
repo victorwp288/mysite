@@ -531,12 +531,32 @@ p {
   text-transform: uppercase;
 }
 
+.system-card__summary {
+  margin: 0;
+  padding: 18px 22px 6px;
+  color: rgba(243, 240, 231, 0.66);
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
+.system-card__summary strong {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
 .system-orbit {
   position: relative;
   padding: 4px 12px 0;
 }
 
 .system-orbit svg {
+  display: block;
   width: 100%;
 }
 
@@ -549,16 +569,35 @@ p {
 .orbit-path {
   fill: none;
   stroke-linecap: round;
-  stroke-width: 2.4;
+  stroke-width: 1.8;
+  vector-effect: non-scaling-stroke;
 }
 
-.orbit-path--one {
+.orbit-path--to-system {
   stroke: var(--signal);
-  stroke-dasharray: 3 9;
+  stroke-dasharray: 3 7;
 }
 
-.orbit-path--two {
-  stroke: rgba(243, 240, 231, 0.3);
+.orbit-path--to-proof {
+  stroke: rgba(116, 176, 255, 0.74);
+}
+
+.orbit-path--feedback {
+  stroke: rgba(243, 240, 231, 0.28);
+  stroke-width: 1.2;
+  stroke-dasharray: 4 7;
+}
+
+#flowArrowSignal path {
+  fill: var(--signal);
+}
+
+#flowArrowWarm path {
+  fill: var(--warm);
+}
+
+#feedbackArrow path {
+  fill: rgba(243, 240, 231, 0.46);
 }
 
 .orbit-node {
@@ -621,7 +660,7 @@ p {
 
 .system-orbit .orbit-center {
   fill: var(--paper);
-  font-size: 7.5px;
+  font-size: 8px;
   font-weight: 500;
   letter-spacing: 0.07em;
   text-anchor: middle;
@@ -630,9 +669,8 @@ p {
 
 .orbit-label__leader {
   fill: none;
-  stroke: rgba(243, 240, 231, 0.42);
+  stroke: rgba(243, 240, 231, 0.34);
   stroke-width: 1;
-  stroke-dasharray: 2 3;
   vector-effect: non-scaling-stroke;
 }
 
@@ -655,13 +693,30 @@ p {
   stroke: rgba(255, 107, 74, 0.54);
 }
 
-.system-orbit .orbit-label__text {
-  fill: rgba(243, 240, 231, 0.82);
-  font-size: 7.5px;
-  font-weight: 500;
-  letter-spacing: 0.14em;
+.system-orbit .orbit-label__title,
+.system-orbit .orbit-label__detail,
+.system-orbit .orbit-feedback-label {
   text-anchor: middle;
   dominant-baseline: central;
+}
+
+.system-orbit .orbit-label__title {
+  fill: rgba(243, 240, 231, 0.82);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+}
+
+.system-orbit .orbit-label__detail {
+  fill: rgba(243, 240, 231, 0.48);
+  font-size: 6.5px;
+  letter-spacing: 0.08em;
+}
+
+.system-orbit .orbit-feedback-label {
+  fill: rgba(243, 240, 231, 0.46);
+  font-size: 7px;
+  letter-spacing: 0.16em;
 }
 
 .system-orbit__stages {
@@ -679,7 +734,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  flex-direction: column;
+  gap: 3px;
   padding: 9px 5px;
   border-right: 1px solid rgba(243, 240, 231, 0.12);
   color: rgba(243, 240, 231, 0.74);
@@ -695,7 +751,7 @@ p {
 
 .system-orbit__stages b {
   color: var(--signal);
-  font-size: 0.48rem;
+  font-size: 0.43rem;
   font-weight: 500;
 }
 
@@ -2355,6 +2411,15 @@ a.work-row:hover .work-row__arrow {
   .capability-ledger__topline,
   .education-panel__topline {
     padding: 12px 14px;
+  }
+
+  .system-card__summary {
+    padding: 15px 17px 4px;
+    font-size: 0.72rem;
+  }
+
+  .system-card__summary strong {
+    font-size: 0.64rem;
   }
 
   .system-orbit {

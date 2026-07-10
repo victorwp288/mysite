@@ -175,8 +175,13 @@
               <span>Operating model</span>
             </div>
 
+            <p class="system-card__summary">
+              <strong>Need → software → evidence.</strong>
+              I turn an unclear problem into a working system, then use testing to sharpen the next pass.
+            </p>
+
             <div class="system-orbit" data-orbit>
-              <svg viewBox="0 0 540 420" aria-hidden="true">
+              <svg viewBox="0 0 540 300" aria-hidden="true">
                 <defs>
                   <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
                     <feGaussianBlur stdDeviation="7" result="blur" />
@@ -185,42 +190,56 @@
                       <feMergeNode in="SourceGraphic" />
                     </feMerge>
                   </filter>
+                  <marker id="flowArrowSignal" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto">
+                    <path d="M0 0L8 4L0 8Z" />
+                  </marker>
+                  <marker id="flowArrowWarm" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto">
+                    <path d="M0 0L8 4L0 8Z" />
+                  </marker>
+                  <marker id="feedbackArrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto">
+                    <path d="M0 0L8 4L0 8Z" />
+                  </marker>
                 </defs>
-                <path class="orbit-grid" d="M42 92H498M42 210H498M42 328H498M122 42V378M270 42V378M418 42V378" />
-                <path class="orbit-path orbit-path--one" d="M79 291C121 171 191 111 276 116C364 121 412 180 454 269" />
-                <path class="orbit-path orbit-path--two" d="M91 122C153 244 238 310 329 298C388 291 429 260 462 207" />
-                <circle class="orbit-node orbit-node--signal" cx="91" cy="122" r="10" />
-                <circle class="orbit-node orbit-node--warm" cx="454" cy="269" r="10" />
-                <circle class="orbit-pulse" cx="270" cy="210" r="27" />
-                <g class="orbit-hub" transform="translate(270 210)">
-                  <circle class="orbit-node orbit-node--hub" r="16" />
-                  <circle class="orbit-hub__ring" r="11.5" />
-                  <text class="orbit-center" x="0" y="0">SHIP</text>
-                </g>
+                <path class="orbit-grid" d="M36 52H504M36 136H504M36 220H504M90 34V250M270 34V250M450 34V250" />
+                <path class="orbit-path orbit-path--to-system" d="M102 136H250" marker-end="url(#flowArrowSignal)" />
+                <path class="orbit-path orbit-path--to-proof" d="M290 136H438" marker-end="url(#flowArrowWarm)" />
+                <path class="orbit-path orbit-path--feedback" d="M450 160C425 224 115 224 90 160" marker-end="url(#feedbackArrow)" />
+
+                <path class="orbit-label__leader" d="M90 118V126M270 118V126M450 118V126" />
                 <g class="orbit-label orbit-label--input">
-                  <path class="orbit-label__leader" d="M91 98V110" />
-                  <rect class="orbit-label__plate" x="49" y="72" width="84" height="26" rx="2" />
-                  <text class="orbit-label__text" x="91" y="85">INPUT</text>
+                  <rect class="orbit-label__plate" x="32" y="76" width="116" height="42" rx="2" />
+                  <text class="orbit-label__title" x="90" y="91">INPUT</text>
+                  <text class="orbit-label__detail" x="90" y="106">NEED / CONSTRAINT</text>
                 </g>
                 <g class="orbit-label orbit-label--system">
-                  <path class="orbit-label__leader" d="M270 184V192" />
-                  <rect class="orbit-label__plate" x="228" y="158" width="84" height="26" rx="2" />
-                  <text class="orbit-label__text" x="270" y="171">SYSTEM</text>
+                  <rect class="orbit-label__plate" x="212" y="76" width="116" height="42" rx="2" />
+                  <text class="orbit-label__title" x="270" y="91">SYSTEM</text>
+                  <text class="orbit-label__detail" x="270" y="106">WORKING SOFTWARE</text>
                 </g>
                 <g class="orbit-label orbit-label--proof">
-                  <path class="orbit-label__leader" d="M454 279V305" />
-                  <rect class="orbit-label__plate" x="412" y="305" width="84" height="26" rx="2" />
-                  <text class="orbit-label__text" x="454" y="318">PROOF</text>
+                  <rect class="orbit-label__plate" x="392" y="76" width="116" height="42" rx="2" />
+                  <text class="orbit-label__title" x="450" y="91">PROOF</text>
+                  <text class="orbit-label__detail" x="450" y="106">TESTS / EVIDENCE</text>
+                </g>
+
+                <circle class="orbit-node orbit-node--signal" cx="90" cy="136" r="10" />
+                <circle class="orbit-node orbit-node--warm" cx="450" cy="136" r="10" />
+                <circle class="orbit-pulse" cx="270" cy="136" r="28" />
+                <g class="orbit-hub" transform="translate(270 136)">
+                  <circle class="orbit-node orbit-node--hub" r="17" />
+                  <circle class="orbit-hub__ring" r="12.5" />
+                  <text class="orbit-center" x="0" y="0">SHIP</text>
                 </g>
                 <g class="orbit-runner" filter="url(#softGlow)">
-                  <circle r="7" />
-                  <animateMotion dur="4.8s" repeatCount="1" fill="freeze" path="M79 291C121 171 191 111 276 116C364 121 412 180 454 269" />
+                  <circle r="5" />
+                  <animateMotion dur="4.8s" repeatCount="1" fill="freeze" path="M90 136H450" />
                 </g>
+                <text class="orbit-feedback-label" x="270" y="224">TEST · LEARN · REFINE</text>
               </svg>
               <div class="system-orbit__stages" aria-hidden="true">
-                <span><b>01</b> Understand</span>
-                <span><b>02</b> Build</span>
-                <span><b>03</b> Verify</span>
+                <span><b>01 · Input</b> Understand</span>
+                <span><b>02 · System</b> Build</span>
+                <span><b>03 · Proof</b> Verify</span>
               </div>
             </div>
 
